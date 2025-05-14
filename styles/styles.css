@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&family=Rye&display=swap');
+@font-face {
+    font-family: 'MiFuente';
+    src: url('../fonts/kuchek-font/Kuchek-gx005.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #f5f1e6;
+    color: #111;
+    padding: 40px;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: #fffdf7;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    border: 4px double #000;
+  }
+
+.container h1{
+    font-family: "Rye", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+  .header {
+    text-align: center;
+    border-bottom: 4px solid #000;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+  }
+
+  .header h1 {
+    font-size: 60px;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .header small {
+    font-size: 16px;
+    display: block;
+    font-style: italic;
+  }
+
+  .section {
+    margin: 40px 0;
+    border-top: 2px dashed #000;
+    padding-top: 20px;
+  }
+
+  .title {
+    border-bottom: 4px solid #000;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-bottom: 0.5px;
+    font-family: 'MiFuente', serif;
+  }
+
+  .flex {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .half {
+    flex: 1 1 45%;
+  }
+
+  .half img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 2px solid #000;
+    box-sizing: border-box;
+  }
+
+  .full {
+    flex: 1 1 100%;
+  }
+
+  p {
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 17px;
+  }
+
+  .bordered {
+    border: 2px solid #000;
+    padding: 15px;
+    background-color: #fdfaf5;
+  }
+
+  .two-images-text {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .image-column {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .image-column img {
+      width: 100%;
+      height: auto;
+      max-height: 250px; /* limita la altura para que ambas entren visualmente bien */
+      object-fit: cover;
+      border: 2px solid #000;
+      box-sizing: border-box;
+    }
+    
+
+  .text-column {
+    flex: 1 1 50%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
