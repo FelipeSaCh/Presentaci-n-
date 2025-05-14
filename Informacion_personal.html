@@ -33,12 +33,12 @@
     </div>
 
     <div class="section flex">
-        <div class="half">
-          <div class="image-column">
-            <img src="./images/1000286319_61a01a2dac3d810f37c1494476b27b44-13_5_2025, 20_51_09.jpg" alt="Orquesta">
-            <img src="./images/1000286342_a10a97ac4b61cfc7bff9e5cf3c5f40a0-13_5_2025, 21_22_23.jpg" alt="Tocando la tuba">
-          </div>
+      <div class="half">
+        <div class="image-column">
+          <img src="./images/1000286319_61a01a2dac3d810f37c1494476b27b44-13_5_2025, 20_51_09.jpg" alt="Orquesta" class="video-trigger">
+          <img src="./images/1000286342_a10a97ac4b61cfc7bff9e5cf3c5f40a0-13_5_2025, 21_22_23.jpg" alt="Tocando la tuba" class="video-trigger">
         </div>
+      </div>
         <div class="half bordered" id="second-information">
           <div class="title">Sus pasiones poco conocidas</div>
           <p>A los 11 años hizo parte de la Red de Músicas de Medellín, destacándose como tubista por su dedicación desde los inicios. Desde entonces, ha demostrado un profundo amor y curiosidad por el mundo musical, mientras avanzaba con éxito en su formación académica.</p>
@@ -47,9 +47,20 @@
         </div>
 
       </div>
-      <div class="section">
-        <a href="./index.html"><button>Anterior pagina</button></a>
+      
+      <!-- CONTENEDOR OCULTO DEL VIDEO -->
+      <div class="video-section hidden" id="videoContainer">
+        <video src="./video/VID_20250514_1636211.mp4" controls></video>
       </div>
+
+
+      <div class="section">
+        <a href="./index.html" class="glow-text">Anterior página</a>
+      </div>
+
+      
+      
   </div>
+  <script src="./js/scripts.js"></script>
 </body>
 </html>

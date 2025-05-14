@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Qwitcher+Grypen:wght@400;700&family=Rye&display=swap');
+
 @font-face {
     font-family: 'MiFuente';
     src: url('../fonts/kuchek-font/Kuchek-gx005.otf') format('truetype');
@@ -8,8 +10,8 @@
   
 
 body {
-    font-family: 'Times New Roman', serif;
-    background-color: #f5f1e6;
+    font-family: 'Kurale', serif;
+    background-color: #F3DFC1;
     color: #111;
     padding: 40px;
   }
@@ -17,8 +19,8 @@ body {
   .container {
     max-width: 900px;
     margin: auto;
-    background: #fffdf7;
-    padding: 40px;
+    background: #f1efeb;
+    padding: 50px;
     box-shadow: 0 0 20px rgba(0,0,0,0.15);
     border: 4px double #000;
   }
@@ -55,6 +57,17 @@ body {
     margin: 40px 0;
     border-top: 2px solid #000;
     padding-top: 20px;
+  }
+
+  .section a.glow-text {
+    display: inline-block;      /* para que tome solo el tamaño del texto */
+    width: 150px;               /* ancho fijo, ajusta según prefieras */
+    height: 40px;               /* altura fija */
+    line-height: 40px;          /* para centrar verticalmente el texto */
+    text-align: center;
+    white-space: nowrap;        /* evitar que el texto haga salto de línea */
+    box-sizing: border-box;     /* para incluir padding y border dentro del tamaño */
+    /* Mantener estilos de glow o lo que ya tengas */
   }
 
   .title {
@@ -104,7 +117,7 @@ body {
   .bordered {
     /* border: 2px solid #000; */
     padding: 15px;
-    background-color: #fdfaf5;
+    background-color: #f1efeb;
   }
 
   .two-images-text {
@@ -147,8 +160,195 @@ body {
 
   .buttons-section{
     display: flex;
-    justify-content: center;
+    justify-content:center;
   }
   .buttons-section a{
-    margin: 5%;
+    margin: 2%;
   }
+
+  .button-54 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-54:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+  }
+  
+  @media (min-width: 768px) {
+    .button-54 {
+      padding: 0.25em 0.75em;
+    }
+  }
+
+  .glow-text {
+    text-decoration: none;
+    transition: text-shadow 0.4s ease;
+    text-shadow: 0 0 2px #fff;
+    color:#000;
+  }
+  
+  .glow-text:hover {
+    text-shadow:
+      0 0 5px #d0e7ff,
+      0 0 10px #a5cfff,
+      0 0 15px #83bfff,
+      0 0 20px #5faeff;
+    cursor: pointer;
+  }
+  
+  .video-section {
+    border-top: #000 2px solid;
+
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .video-section video {
+    width: 80%;
+    margin-top: 30px;
+
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 183, 255, 0.2);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  img[alt="Foto-academica"] {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .accordion {
+    font-family: 'Kurale', serif;
+    border: 1px solid #000;
+    margin: 10px 0;
+    margin-top: 10%;
+  }
+  
+  .accordion-btn {
+    font-family: 'Kurale', serif;
+
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.3s ease;
+    padding: 0 10px;
+  }
+  
+  .accordion.active .accordion-content {
+    max-height: 500px; /* O un valor grande para contener el contenido */
+    padding: 10px;
+  }
+  
+  
+  .text-image-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap; /* para que en pantallas pequeñas la imagen baje */
+  }
+  
+  .text-image-container p {
+    flex: 1 1 60%;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 17px;
+    min-width: 250px; /* para que no se encoja demasiado */
+  }
+  
+  .text-image-container img {
+    flex: 1 1 35%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px; /* opcional, para suavizar bordes */
+    box-sizing: border-box;
+    min-width: 200px; /* evita que quede demasiado pequeña */
+  }
+  .repository {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .repository a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .repository a:hover {
+    color: #4078c0;
+  }
+  
+  /* Fijar el pie de página siempre al fondo */
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.repository-section {
+  border-top:0cap;
+  display: flex;
+  flex-direction: column; /* Para apilar verticalmente */
+  align-items: center;     /* Centrar horizontalmente */
+  justify-content: center; /* Centrar verticalmente si quieres */
+  width: 100%;
+  min-height: 120px;
+  box-sizing: border-box;
+  padding: 1rem 0;
+}
+
+.repository-section .title {
+  margin-bottom: 5%;
+  text-align: center;
+  border: 0cap;
+}
+
+.repository-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.repository-icon a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.repository-icon a:hover {
+  color: #4078c0;
+}
