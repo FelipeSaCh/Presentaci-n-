@@ -23,6 +23,7 @@ body {
     border: 4px double #000;
   }
 
+
 .container h1{
     font-family: "Rye", serif;
     font-weight: 400;
@@ -52,7 +53,7 @@ body {
 
   .section {
     margin: 40px 0;
-    border-top: 2px dashed #000;
+    border-top: 2px solid #000;
     padding-top: 20px;
   }
 
@@ -94,9 +95,14 @@ body {
     line-height: 1.7;
     font-size: 17px;
   }
-
+  #first-information{
+    border-right: 2px solid #000;
+  }
+  #second-information{
+    border-left: 2px solid #000;
+  }
   .bordered {
-    border: 2px solid #000;
+    /* border: 2px solid #000; */
     padding: 15px;
     background-color: #fdfaf5;
   }
@@ -121,6 +127,13 @@ body {
       border: 2px solid #000;
       box-sizing: border-box;
     }
+    .image-column img:hover{
+      transform: scale(1.05);           /* Agranda la imagen un 5% */
+      border: 3px solid #333;           /* Borde más visible al pasar el mouse */
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* Sombra profunda */
+      transition: all 0.3s ease-in-out; /* Transición suave */
+      cursor: pointer;   
+    }
     
 
   .text-column {
@@ -130,4 +143,12 @@ body {
   img {
     max-width: 100%;
     height: auto;
+  }
+
+  .buttons-section{
+    display: flex;
+    justify-content: center;
+  }
+  .buttons-section a{
+    margin: 5%;
   }
