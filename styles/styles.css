@@ -266,7 +266,7 @@ body {
     max-height: 500px; /* O un valor grande para contener el contenido */
     padding: 10px;
   }
-  
+
   
   .text-image-container {
     display: flex;
@@ -275,6 +275,11 @@ body {
     flex-wrap: wrap; /* para que en pantallas pequeñas la imagen baje */
   }
   
+  .repository-icon img{
+    width: 50%;
+    width: 50%;
+  }
+
   .text-image-container p {
     flex: 1 1 60%;
     text-align: justify;
